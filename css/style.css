@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+p {
+    color: #fff;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+p::after {
+    content: "|";
+    animation: animate 0.5s ease infinite;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
